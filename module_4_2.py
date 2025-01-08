@@ -21,6 +21,10 @@ def send_mail(message, recipient, sender='Kazakovmvmvm@gmail.com'):
     if sender == 'Kazakovmvmvm@gmail.com':
         print(f'Внимание: Этот: {sender} адрес используется по умолчанию')
 
+    if sender != 'Kazakovmvmvm@gmail.com':
+        print(f'Внимание: Этот: {sender} НЕСТАНДАРТНЫЙ ОТПРАВИТЕЛЬ ')
+
+
     print(f'Письмо отправляет: {sender}, Получатель: {recipient}: {message}')
 
 send_mail('День добрый', 'poluchatrl@mail.ru', 'otpravitrl@mail.ru')
